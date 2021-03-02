@@ -79,7 +79,8 @@ body{
 	@media(max-width: 762px){
 		&__content{
 			width: 335px;
-			margin: 0 15px;
+			height: 490px;
+			margin: 110px 15px 15px 15px;
 			background-position: -100px 50px, 48px -150px;
 			background-size: 0%, 72%;
 			&:after{
@@ -97,7 +98,7 @@ body{
 		}
 		&__content-faq{
 			width: 88%;
-			padding: 0 20px 50px 0;
+			padding: 0 20px 40px 0;
 			font-size: 12px;
 			line-height: 20px;
 			& h1{
