@@ -94,17 +94,17 @@ body {
   .page__content {
     width: 335px;
     margin: 0 15px;
-    background-position: -100px 50px, 58px -150px;
+    background-position: -100px 50px, 48px -150px;
     background-size: 0%, 72%;
   }
   .page__content:after {
     content: '';
     position: absolute;
-    width: 270px;
+    width: 80%;
     height: 270px;
     background: url("../img/illustration-woman-online-mobile.svg") 0 0/100% auto no-repeat;
-    -webkit-transform: translateX(25px) translateY(-120px);
-            transform: translateX(25px) translateY(-120px);
+    -webkit-transform: translateX(20px) translateY(-120px);
+            transform: translateX(20px) translateY(-120px);
   }
   .page__content:before {
     width: 0;

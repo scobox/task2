@@ -80,15 +80,15 @@ body{
 		&__content{
 			width: 335px;
 			margin: 0 15px;
-			background-position: -100px 50px, 58px -150px;
+			background-position: -100px 50px, 48px -150px;
 			background-size: 0%, 72%;
 			&:after{
 				content: '';
 				position: absolute;
-				width: 270px;
+				width: 80%;
 				height: 270px;
 				background: url('../img/illustration-woman-online-mobile.svg') 0 0/100% auto no-repeat;
-				transform: translateX(25px) translateY(-120px);
+				transform: translateX(20px) translateY(-120px);
 			}
 			&:before{
 				width:0;
