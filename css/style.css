@@ -1,0 +1,122 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.page {
+  width: 100%;
+  min-height: 95vh;
+  background: #af67e9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.page__content {
+  font-size: 16px;
+  width: 1000px;
+  height: 530px;
+  background: #fff;
+  border-radius: 15px;
+  position: relative;
+  background-image: url("../img/illustration-woman-online-desktop.svg"), url("../img/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: -100px 50px, -400px -230px;
+  background-size: 50%, 80%;
+}
+
+.page__content:before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url("../img/illustration-box-desktop.svg") 0 0/100% auto no-repeat;
+  -webkit-transform: translateX(-75px) translateY(200px);
+          transform: translateX(-75px) translateY(200px);
+}
+
+.page__content-faq {
+  position: absolute;
+  width: 42%;
+  max-height: 80%;
+  margin: auto;
+  top: 100px;
+  right: 0;
+  padding: 0 90px 50px 0;
+}
+
+.page__content-item {
+  border-bottom: 1px solid #e7e7e9;
+  color: #4a4b5e;
+  position: relative;
+}
+
+.page__content-item:before {
+  cursor: pointer;
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -10px;
+  right: 0;
+  background: url(../img/icon-arrow-down.svg) 6px 10px/50% auto no-repeat;
+}
+
+.page__content-item span {
+  color: #787887;
+  display: none;
+  padding: 0 0 10px 0;
+}
+
+.page__content-item.active {
+  font-weight: 700;
+}
+
+.page__content-item.active:before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  top: -7px;
+}
+
+.page__content-item.active span {
+  display: block;
+  font-weight: 300;
+}
+
+@media (max-width: 762px) {
+  .page__content {
+    width: 375px;
+    background-position: -100px 50px, 58px -150px;
+    background-size: 0%, 72%;
+  }
+  .page__content:after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: url("../img/illustration-woman-online-mobile.svg") 0 0/100% auto no-repeat;
+    -webkit-transform: translateX(25px) translateY(-120px);
+            transform: translateX(25px) translateY(-120px);
+  }
+  .page__content:before {
+    width: 0;
+    height: 0;
+  }
+  .page__content-faq {
+    width: 88%;
+    padding: 0 20px 50px 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .page__content-faq h1 {
+    text-align: center;
+    padding: 0 0 30px 0px;
+  }
+}
