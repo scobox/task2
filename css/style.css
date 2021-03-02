@@ -93,6 +93,7 @@ body {
 @media (max-width: 762px) {
   .page__content {
     width: 375px;
+    margin: 0 20px;
     background-position: -100px 50px, 58px -150px;
     background-size: 0%, 72%;
   }
