@@ -79,6 +79,7 @@ body{
 	@media(max-width: 762px){
 		&__content{
 			width: 335px;
+			min-width: 200px;
 			height: 490px;
 			margin: 110px 15px 15px 15px;
 			background-position: -100px 50px, 48px -150px;
